@@ -5,6 +5,13 @@ console.log("Hello, World!");
 var a=10;
 console.log(a);
 // This code declares a variable 'a' and assigns it the value of 10, then prints the value of 'a' to the console.   
+
+
+
+
+
+
+
 var a=20;
 console.log(a);
 // This code reassigns the variable 'a' to the value of 20 and prints it to the console.  
