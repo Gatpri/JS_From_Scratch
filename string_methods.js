@@ -28,3 +28,37 @@ console.log(friend2);
 console.log(friend2.trim()); // removes the whitespace from the beginning and end of the string
 console.log(friend2.trimStart()); // removes the whitespace from the beginning of the string
 console.log(friend2.trimEnd()); // removes the whitespace from the end of the string    
+
+
+
+
+
+const sentence = "The quick brown fox jumps over the lazy dog";
+const word1 = "fox";
+const word2 = "fox1";
+console.log(sentence.includes(word1));
+console.log(sentence.includes(word2));
+console.log(`The sentence is "${sentence}"`)
+console.log(`The word "${word1}" ${sentence.includes(word1) ? 'is' : 'is not'} in the sentence`);
+console.log(`The word "${word2}" ${sentence.includes(word2) ? 'is' : 'is not'} in the sentence`);
+
+
+//Using Startwith and endwith method
+let text= "JavaScript is awesome";
+// startsWith examples
+console.log(text.startsWith("Java"));      // true
+console.log(text.startsWith("java"));      // false (case-sensitive)
+console.log(text.startsWith("Script", 4)); // true (starts at index 4)
+
+// endsWith examples
+console.log(text.endsWith("awesome"));     // true
+console.log(text.endsWith("Awesome"));     // false (case-sensitive)
+console.log(text.endsWith("JavaScript", 10)); // true (checks first 10 characters)
+
+
+//PRoblem solution
+console.log("Extract the amount out of this string "PLease give RS 1000"");
+let str2 ="please give RS 1000";
+let amount = Number.parseInt(str2.slice(15));
+console.log(amount);
+console.log(typeof amount);
